@@ -1,0 +1,176 @@
+.json-formatter-tool .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.json-formatter-tool .content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px; /* Space between input and output sections */
+}
+
+.json-formatter-tool .input-container,
+.json-formatter-tool .output-container {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.json-formatter-tool .section-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.json-formatter-tool .json-input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none; /* Prevent manual resizing */
+    font-family: monospace;
+    height: 500px; /* Set a fixed height to match the output section */
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.json-formatter-tool .json-output {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    height: 500px; /* Set a fixed height to match the input section */
+    overflow-y: auto;
+}
+
+.json-formatter-tool .format-button {
+    align-self: flex-start;
+    background-color: #007bff;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.json-formatter-tool .format-button:hover {
+    background-color: #0056b3;
+}
+
+.json-formatter-tool .upload-container {
+    margin-bottom: 10px;
+}
+
+.json-formatter-tool .upload-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 20px;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+.json-formatter-tool .upload-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.json-formatter-tool .file-upload {
+    display: none;
+}
+
+.json-formatter-tool .json-output .react-json-view {
+    margin: 0; /* Remove margins for better alignment */
+    height: 100%;
+    overflow-y: auto;
+}
+
+.json-formatter-tool .left-side-input-section{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.json-formatter-tool .section-label{
+    margin-top: 11px;
+}
+.json-formatter-tool .copy-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 10px;
+}
+
+.json-formatter-tool .copy-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.json-formatter-tool .copy-button-icon {
+    margin-right: 8px;
+}
+
+.json-formatter-tool .output-container {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0;
+}
+
+.json-formatter-tool .json-output {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    height: 500px; /* Set a fixed height to match the input section */
+    overflow-y: auto;
+    position: relative; /* Make sure the button can be positioned relative to this container */
+}
+
+.json-formatter-tool .right-side-input-section
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.json-formatter-tool .right-side-input-section  .section-label{
+    margin-bottom: 11px;
+}
+
+.json-formatter-tool .right-side-input-section .copy-button{
+    cursor: pointer;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+

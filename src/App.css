@@ -1,38 +1,257 @@
-.App {
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* .body-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} */
+.container {
+  padding: 8px 24px;
+  padding-bottom: 60px;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #f7f8fb;
+  height: auto;
+  min-height: 480px;
+}
+
+/* Header styles */
+.header {
+  background-color: #282c34;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .left-section{
+    display: flex;
+    align-items: center;
+}
+
+header .left-section h1{
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 28px;
+}
+
+.heading-section {
+  text-align: center; /* Center alignment for the section */
+  margin-bottom: 0;
+  width: 100%;
+}
+
+/* Heading Styles */
+.page-heading {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #34495e; /* Dark gray-blue color for elegance */
+  padding: 1rem 2rem;
+  background-color: #ecf0f1; /* Light gray background */
+  display: inline-block; /* Inline block to fit content */
+  border-radius: 50px; /* Rounded edges for a modern look */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin-bottom: 0.5rem; /* Spacing below the heading */
+}
+
+.page-subheading {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #7f8c8d; /* Soft gray for subheading */
+  margin-top: 0.3rem;
+}
+.react-icon {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: white;
+  color: #282c34;
+  border-radius: 5px;
+}
+
+/* Main content styles */
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.card p {
+  margin: 0;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer a {
+  color: white;
+  margin: 0 0.5rem;
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer a:hover {
+  text-decoration: underline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.dashboard-page{
+  padding-top: 20px;
+}
+
+/* Card container styles */
+
+.card-container a {
+  text-decoration: none;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-decoration: none;
+  color: #333;
+  width: 334px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Card icon styles */
+.card-icon {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+/* Card content styles */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.card-description {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+.dashboard-wrapper {
+  padding: 20px;
+}
+
+.dashboard-page {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.dashboard-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Optional: Style the cards for better appearance */
+.dashboard-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+.dashboard-card-icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.dashboard-card-title {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.dashboard-card-description {
+  font-size: 14px;
+  color: #555;
+}
+
+.dashboard-card-container a{
+ text-decoration: none;
 }

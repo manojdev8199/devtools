@@ -1,0 +1,142 @@
+.array-formatter-tool .heading-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.array-formatter-tool .page-heading {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.array-formatter-tool .page-subheading {
+    font-size: 18px;
+    color: #777;
+}
+
+.array-formatter-tool .language-selection {
+    margin-bottom: 20px;
+}
+
+.array-formatter-tool .language-selection label {
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.array-formatter-tool .language-select {
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 5px;
+}
+
+.array-formatter-tool .input-output-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.array-formatter-tool .input-section,
+.array-formatter-tool .output-section {
+    flex: 1;
+}
+
+.array-formatter-tool .input-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.array-formatter-tool .input-textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-color: #fff;
+    resize: vertical;
+    margin-bottom: 20px;
+}
+
+.array-formatter-tool .format-button {
+    align-self: center;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.array-formatter-tool .format-button:hover {
+    background-color: #0056b3;
+}
+
+.array-formatter-tool .copy-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 13px;
+}
+
+.array-formatter-tool .copy-button:hover {
+    background-color: #218838;
+}
+
+.array-formatter-tool .copy-icon {
+    margin-right: 8px;
+}
+
+.array-formatter-tool .copy-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+}
+
+.array-formatter-tool .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    text-align: center;
+}
+
+.array-formatter-tool .section-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.array-formatter-tool .output-textarea {
+    width: 96%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-color: #fff;
+    resize: vertical;
+}
+
+.array-formatter-tool .input-output-container {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.array-formatter-tool .left-top-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

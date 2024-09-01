@@ -1,0 +1,119 @@
+/* TextDiffTool.css */
+
+/* Container and general styles */
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .flex-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .upload-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 20px;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+  }
+  
+  .upload-button:hover {
+    background: linear-gradient(135deg, #00aaff, #007bff);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+  
+  .upload-button-icon {
+    margin-right: 8px;
+  }
+  
+  .textarea {
+    height: 400px;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Header Styles */
+  
+  
+  /* Section Header Style */
+  .difference-viewer-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  /* Identical Message Style */
+  .identical-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 400;
+    color: #2e7d32;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    padding: 10px;
+    border: 2px solid #c8e6c9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .identical-message-icon {
+    margin-right: 10px;
+    font-size: 24px;
+  }
+  
+  /* Diff Container Style */
+  .diff-container {
+    font-size: 16px;
+    line-height: 1.6;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .diff-content-text {
+    word-break: break-word;
+  }
+  
+  .diff-line {
+    padding: 10px;
+  }
+  

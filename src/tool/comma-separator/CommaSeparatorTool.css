@@ -1,0 +1,154 @@
+.comma-separator-tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.comma-separator-tool .heading-section {
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+.comma-separator-tool .heading-section .page-heading {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.comma-separator-tool .heading-section .page-subheading {
+    font-size: 18px;
+    color: #777;
+}
+
+.comma-separator-tool .content-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+
+.comma-separator-tool .input-container,
+.comma-separator-tool .output-container {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.comma-separator-tool .section-label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.comma-separator-tool .input-textarea,
+.comma-separator-tool .formatted-output {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-color: #fff;
+    resize: vertical;
+    margin-bottom: 10px;
+    height: 200px; /* Match the height here */
+}
+
+.comma-separator-tool .conversion-options,
+.comma-separator-tool .conversion-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comma-separator-tool .conversion-buttons {
+    padding-top: 10px;
+}
+
+.comma-separator-tool .conversion-options label,
+.comma-separator-tool .conversion-buttons label {
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.comma-separator-tool .conversion-options input[type="radio"],
+.comma-separator-tool .conversion-buttons input[type="radio"] {
+    margin-right: 10px;
+}
+
+.comma-separator-tool .conversion-options label:hover,
+.comma-separator-tool .conversion-buttons label:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+}
+
+.comma-separator-tool .format-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.comma-separator-tool .format-button:hover {
+    background-color: #0056b3;
+}
+
+.comma-separator-tool .copy-button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+
+.comma-separator-tool .copy-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .comma-separator-tool .content-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .comma-separator-tool .input-container,
+    .comma-separator-tool .output-container {
+        width: 100%;
+    }
+}
+
+
+.comma-separator-tool .right-output-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

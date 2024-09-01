@@ -1,0 +1,192 @@
+/* src/tool/css-to-less/CssToLessConverterTool.css */
+
+.css-to-less-converter-tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.css-to-less-converter-tool .heading-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.css-to-less-converter-tool .heading-section .page-heading {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    color: #333;
+}
+
+.css-to-less-converter-tool .heading-section .page-subheading {
+    font-size: 18px;
+    color: #777;
+}
+
+.css-to-less-converter-tool .conversion-type {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.css-to-less-converter-tool .conversion-type label {
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.css-to-less-converter-tool .conversion-type input[type="radio"] {
+    margin-right: 10px;
+}
+
+.css-to-less-converter-tool .conversion-type label:hover {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+}
+
+.css-to-less-converter-tool .upload-container {
+    margin-bottom: 20px;
+}
+
+.css-to-less-converter-tool .file-upload {
+    display: none;
+}
+
+.css-to-less-converter-tool .upload-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.css-to-less-converter-tool .upload-button:hover {
+    background-color: #0056b3;
+}
+
+.css-to-less-converter-tool .content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.css-to-less-converter-tool .input-section,
+.css-to-less-converter-tool .output-section {
+    width: 48%;
+}
+
+.css-to-less-converter-tool .css-input,
+.css-to-less-converter-tool .formatted-output {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    background-color: #fff;
+    resize: vertical;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+}
+
+.css-to-less-converter-tool .format-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.css-to-less-converter-tool .format-button:hover {
+    background-color: #0056b3;
+}
+
+.css-to-less-converter-tool .error-message {
+    color: #ff4d4d;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.css-to-less-converter-tool .output-content {
+    position: relative;
+}
+
+.css-to-less-converter-tool .copy-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.css-to-less-converter-tool .copy-button:hover {
+    background-color: #218838;
+}
+
+.css-to-less-converter-tool .copy-icon {
+    margin-right: 8px;
+}
+
+.css-to-less-converter-tool .copy-message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #28a745;
+}
+
+.css-to-less-converter-tool .section-label {
+    font-size: 18px;
+    font-weight: bold !important;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+.css-to-less-converter-tool .left-input-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;   
+}
+
+.css-to-less-converter-tool .input-bottom-section .conversion-buttons{
+    text-align: center;
+}
+
+.css-to-less-converter-tool .copy-button{
+    cursor: pointer;
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+    margin-top: 0;
+    margin-bottom: 19px;
+}
