@@ -5,8 +5,10 @@ function Header() {
     return ( 
     <header className="header">
         <div className='left-section'>
-            <FaTools className="react-icon" />
-            <h1 className="header-title"> DevTools</h1>
+            <Link to="/" className="logo-title-link">
+                <FaTools className="react-icon" />
+                <h1 className="header-title"> DevTools</h1>
+            </Link>
         </div>
         <nav className="nav-menu">
         <Link to="/" className="nav-item"><FaHome /> Home</Link>
