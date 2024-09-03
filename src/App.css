@@ -267,3 +267,15 @@ header .left-section h1{
 .dashboard-card-container a{
  text-decoration: none;
 }
+
+@media (max-width:767px){
+  .dashboard-card-container{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width:768px) and (max-width:1024px){
+  .dashboard-card-container{
+    grid-template-columns: 1fr 1fr;
+  }
+}
