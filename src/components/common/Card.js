@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 const Card = ({ title, description, icon, link }) => {
 
     return (
-      <Link to={link} className="card-link">
+     
         <div className="card">
+         <Link to={link} className="card-link">
           <div className="card-header">
             <div className="card-icon">
               {icon}
@@ -14,8 +15,9 @@ const Card = ({ title, description, icon, link }) => {
               <p className="card-description">{description}</p>
             </div>
           </div>
+          </Link>
         </div>
-      </Link>
+      
     );
   }
   

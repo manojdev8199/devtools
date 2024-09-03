@@ -1,4 +1,9 @@
 /* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -127,7 +132,7 @@ header .left-section h1{
   padding: 1rem;
   text-decoration: none;
   color: #333;
-  width: 250px;
+  width: 100%;
   text-align: center;
   transition: transform 0.2s;
 }
@@ -178,7 +183,7 @@ header .left-section h1{
   padding: 1.5rem;
   text-decoration: none;
   color: #333;
-  width: 334px;
+  width: 100%;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
@@ -228,7 +233,7 @@ header .left-section h1{
 
 .dashboard-card-container {
   display: grid;
- grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   max-width: 1200px;
   width: 100%;
