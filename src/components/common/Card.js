@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaDiff, FaCode } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 const Card = ({ title, description, icon, link }) => {
 

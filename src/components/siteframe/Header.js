@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaReact, FaHome, FaTools, FaQuestionCircle, FaCog } from 'react-icons/fa';
+import {  FaHome, FaTools, FaQuestionCircle } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 function Header() {
     return ( 
